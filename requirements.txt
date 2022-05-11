@@ -1,0 +1,4 @@
+cx_Freeze
+pygame
+pygame_menu
+numpy

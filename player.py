@@ -111,11 +111,12 @@ def continuous_movement(self, carte):
     """ This function is basically a while using a thread to perform a perpetual movement """
     global t_kill
     global touche
+    tick = 0.2111
     while t_kill == False:
         if touche == None or self.alive == False:
             t_kill = True
         self.move_player(carte, touche)
-        time.sleep(0.2111)
+        time.sleep(tick*self.speed)
 
 
 def is_something(carte, x_1, y_1):

@@ -45,6 +45,7 @@ def display_map(carte):
                 pygame.draw.rect(dis, light_green, [x_1 * 30, y_1 * 30, 30, 30])
             elif carte[y_1,x_1] == 3:
                 pygame.draw.rect(dis, purple, [x_1 * 30, y_1 * 30, 30, 30])
+                pygame.draw.rect(dis, black, [x_1 * 30, y_1 * 30, 30, 30], 1) # Border
             elif carte[y_1,x_1] == 4:
                 pygame.draw.rect(dis, red, [x_1 * 30, y_1 * 30, 30, 30])
             x_1+= 1
